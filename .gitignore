@@ -1,0 +1,12 @@
+# logs, backups and generated files
+logs/
+backups/
+reports/
+
+# os junk
+.DS_Store
+*.swp
+
+# archives
+*.tar.gz
+
