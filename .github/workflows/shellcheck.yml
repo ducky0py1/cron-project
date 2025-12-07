@@ -1,11 +1,13 @@
 name: Shellcheck
+
 on: [push, pull_request]
+
 jobs:
-    shellcheck:
+  shellcheck:
     runs-on: ubuntu-latest
     steps:
-    - users: actions/checkout@v4
-    - name: Run Shellcheck
-      users: ludeeus/action-shellcheck@v1
-      with:
-        args: "scripts/*.sh"
+      - uses: actions/checkout@v4
+      - name: Run Shellcheck
+        uses: ludeeus/action-shellcheck@v1
+        with:
+          args: "scripts/*.sh"
